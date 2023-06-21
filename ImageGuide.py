@@ -6,6 +6,9 @@ import math
 
 from labellines import labelLines
 
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
 def unpack_dict(D, n = 2):
   ds = [{k:V[i] for k,V in D.items()} for i in range(n)]
   return tuple(ds)
